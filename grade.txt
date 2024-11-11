@@ -1,0 +1,198 @@
+https://github.com/UM-CSC322-24F/programming-assignment-andrewwhitakerr.git
+commit 76d63d92b2696ce9ab76960627e0b680fc665a39
+Author: Andrew Whitaker <andrewwhitaker19@gmail.com>
+Date:   Sun Oct 27 05:19:31 2024 -0400
+
+    Holy **** I finished it
+---------------------------------------------------------
+Fleet Management
+
+Grade : 19/20
+
+Welcome Message                 0.5/0.5
+Menu                            1.0/1.0
+Print Sorted                    1.5/1.5
+Add                             1.0/1.0
+Remove                          1.0/1.0
+Payment                         1.0/1.0
+Monthly                         1.0/1.0
+Exit Message                    0.5/0.5
+#defines                        0.5/0.5
+typedefs                        0.5/0.5
+Data Structure                  0.5/0.5
+qsort                           0.5/0.5
+Loads from CSV                  2.0/2.0
+Saves To CSV                    1.0/1.0
+Boat names (CI)                 0.5/0.5
+Remove/Payment missing boats    0.5/0.5
+Payment Too High                0.5/0.5
+Check Number of cmd arguments   0 5/0.5
+Test file open/close errors     0.5/0.5
+Test Malloc Errors              0.5/0.5
+Free all memory on Exit         0.5/0.5
+Functions and Parameters        1.0/1.0
+Identifier names                1.0/1.0
+Global Variables (bad)          0.0/1.0
+Formatting                      1.0/1.0
+Commenting                      1.0/1.0
+Anything else ugly              1.0/1.0
+
+Comments : Boat Record Data Structure is a global Variable
+
+---------------------------------------------------------Script started on 2024-11-01 16:01:13-04:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="174" LINES="18"]
+[?2004h]0;auxport@auxport: ~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[01;32mauxport@auxport[00m:[01;34m~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[00m$ ./Boa[K[K[K[K[Kgcc - [Ko BoatManagement.c BoatManagement
+[?2004l
+/usr/bin/ld: cannot find BoatManagement: No such file or directory
+collect2: error: ld returned 1 exit status
+[?2004h]0;auxport@auxport: ~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[01;32mauxport@auxport[00m:[01;34m~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[00m$ ls
+[?2004l
+BoatData.csv  grade1.txt  grade.txt  README.md
+[?2004h]0;auxport@auxport: ~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[01;32mauxport@auxport[00m:[01;34m~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[00m$ lsgcc -o BoatManagement.c BoatManagement
+[?2004l
+/usr/bin/ld: cannot find BoatManagement: No such file or directory
+collect2: error: ld returned 1 exit status
+[?2004h]0;auxport@auxport: ~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[01;32mauxport@auxport[00m:[01;34m~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[00m$ ls
+[?2004l
+BoatData.csv  grade1.txt  grade.txt  README.md
+[?2004h]0;auxport@auxport: ~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[01;32mauxport@auxport[00m:[01;34m~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[00m$ lsgcc -o BoatManagement.c BoatManagement[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KBoatMangemen[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KBoatManagement.c -o[Ki[Ko BoatManagement
+[?2004l
+[?2004h]0;auxport@auxport: ~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[01;32mauxport@auxport[00m:[01;34m~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[00m$ gcc BoatManagement.c -o BoatManagementls[Kgcc -o BoatManagement.c BoatManagement[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K./BoatManagement
+[?2004l
+Usage: ./BoatManagement <data_file>
+[?2004h]0;auxport@auxport: ~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[01;32mauxport@auxport[00m:[01;34m~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[00m$ ./BoatManagement BoatData.csv
+[?2004l
+
+Welcome to the Boat Management System
+-------------------------------------
+
+(I)nventory, (A)dd, (R)emove, (P)ayment, (M)onth, e(X)it : i
+Big Brother           20'    slip   # 27   Owes $1200.00
+Magic                 38' trailor 7KZ099   Owes $   0.00
+Moon Glow             30'    slip   # 13   Owes $ 500.00
+Osita                 40'    land      C   Owes $1000.07
+Run About             18' storage   # 13   Owes $ 200.50
+
+(I)nventory, (A)dd, (R)emove, (P)ayment, (M)onth, e(X)it : x
+
+Exiting the Boat Management System
+
+[?2004h]0;auxport@auxport: ~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[01;32mauxport@auxport[00m:[01;34m~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[00m$ ./BoatManagement BoatData.csv
+[?2004l
+
+Welcome to the Boat Management System
+-------------------------------------
+
+(I)nventory, (A)dd, (R)emove, (P)ayment, (M)onth, e(X)it : a
+Please enter the boat data in CSV format                 : dadadadad
+
+(I)nventory, (A)dd, (R)emove, (P)ayment, (M)onth, e(X)it : i
+Big Brother           20'    slip   # 27   Owes $1200.00
+Magic                 38' trailor 7KZ099   Owes $   0.00
+Moon Glow             30'    slip   # 13   Owes $ 500.00
+Osita                 40'    land      C   Owes $1000.07
+Run About             18' storage   # 13   Owes $ 200.50
+
+(I)nventory, (A)dd, (R)emove, (P)ayment, (M)onth, e(X)it : ^[[A^[[A^[[B            a
+Please enter the boat data in CSV format                 : Brooks,34,trailor,AAR666,99.00
+
+(I)nventory, (A)dd, (R)emove, (P)ayment, (M)onth, e(X)it : i
+Big Brother           20'    slip   # 27   Owes $1200.00
+Brooks                34' trailor AAR666   Owes $  99.00
+Magic                 38' trailor 7KZ099   Owes $   0.00
+Moon Glow             30'    slip   # 13   Owes $ 500.00
+Osita                 40'    land      C   Owes $1000.07
+Run About             18' storage   # 13   Owes $ 200.50
+
+(I)nventory, (A)dd, (R)emove, (P)ayment, (M)onth, e(X)it : p
+Please enter the boat name                               : Brooks
+Please enter the amount to be paid                       : 20
+
+(I)nventory, (A)dd, (R)emove, (P)ayment, (M)onth, e(X)it : m
+
+(I)nventory, (A)dd, (R)emove, (P)ayment, (M)onth, e(X)it : i
+Big Brother           20'    slip   # 27   Owes $1450.00
+Brooks                34' trailor AAR666   Owes $ 929.00
+Magic                 38' trailor 7KZ099   Owes $ 950.00
+Moon Glow             30'    slip   # 13   Owes $ 875.00
+Osita                 40'    land      C   Owes $1560.07
+Run About             18' storage   # 13   Owes $ 402.10
+
+(I)nventory, (A)dd, (R)emove, (P)ayment, (M)onth, e(X)it : p
+Please enter the boat name                               : 900   Bro ooks
+Please enter the amount to be paid                       : 900
+
+(I)nventory, (A)dd, (R)emove, (P)ayment, (M)onth, e(X)it : i
+Big Brother           20'    slip   # 27   Owes $1450.00
+Brooks                34' trailor AAR666   Owes $  29.00
+Magic                 38' trailor 7KZ099   Owes $ 950.00
+Moon Glow             30'    slip   # 13   Owes $ 875.00
+Osita                 40'    land      C   Owes $1560.07
+Run About             18' storage   # 13   Owes $ 402.10
+
+(I)nventory, (A)dd, (R)emove, (P)ayment, (M)onth, e(X)it : r
+Please enter the boat name                               : Broo
+No boat with that name
+
+(I)nventory, (A)dd, (R)emove, (P)ayment, (M)onth, e(X)it : ^[[A    r
+Please enter the boat name                               : Brooks
+
+(I)nventory, (A)dd, (R)emove, (P)ayment, (M)onth, e(X)it : i
+Big Brother           20'    slip   # 27   Owes $1450.00
+Magic                 38' trailor 7KZ099   Owes $ 950.00
+Moon Glow             30'    slip   # 13   Owes $ 875.00
+Osita                 40'    land      C   Owes $1560.07
+Run About             18' storage   # 13   Owes $ 402.10
+
+(I)nventory, (A)dd, (R)emove, (P)ayment, (M)onth, e(X)it : x
+
+Exiting the Boat Management System
+
+[?2004h]0;auxport@auxport: ~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[01;32mauxport@auxport[00m:[01;34m~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[00m$ ./BoatManagement BoatData.csv
+[?2004l
+
+Welcome to the Boat Management System
+-------------------------------------
+
+(I)nventory, (A)dd, (R)emove, (P)ayment, (M)onth, e(X)it : q
+Invalid option q
+
+(I)nventory, (A)dd, (R)emove, (P)ayment, (M)onth, e(X)it : x
+
+Exiting the Boat Management System
+
+[?2004h]0;auxport@auxport: ~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[01;32mauxport@auxport[00m:[01;34m~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[00m$ valgrind ./BoatMaa[Knagement BoatData.csv
+[?2004l
+==24090== Memcheck, a memory error detector
+==24090== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==24090== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==24090== Command: ./BoatManagement BoatData.csv
+==24090== 
+
+Welcome to the Boat Management System
+-------------------------------------
+
+(I)nventory, (A)dd, (R)emove, (P)ayment, (M)onth, e(X)it : i
+Big Brother           20'    slip   # 27   Owes $1450.00
+Magic                 38' trailor 7KZ099   Owes $ 950.00
+Moon Glow             30'    slip   # 13   Owes $ 875.00
+Osita                 40'    land      C   Owes $1560.07
+Run About             18' storage   # 13   Owes $ 402.10
+
+(I)nventory, (A)dd, (R)emove, (P)ayment, (M)onth, e(X)it : x
+
+Exiting the Boat Management System
+
+==24090== 
+==24090== HEAP SUMMARY:
+==24090==     in use at exit: 0 bytes in 0 blocks
+==24090==   total heap usage: 11 allocs, 11 frees, 11,944 bytes allocated
+==24090== 
+==24090== All heap blocks were freed -- no leaks are possible
+==24090== 
+==24090== For lists of detected and suppressed errors, rerun with: -s
+==24090== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+[?2004h]0;auxport@auxport: ~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[01;32mauxport@auxport[00m:[01;34m~/Documents/CSC/CSC322/programming-assignment-submissions/programming-assignment-andrewwhitakerr[00m$ exit
+[?2004l
+exit
+
+Script done on 2024-11-01 16:07:21-04:00 [COMMAND_EXIT_CODE="0"]
